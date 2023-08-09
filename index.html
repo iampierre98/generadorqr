@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Generador de Códigos QR</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-svg@1.0.0/dist/qrcode.min.js"></script>
+
+</head>
+<body>
+    <h1>Generador de Códigos QR</h1>
+    <label for="codeInput">Ingresa un código de 8 dígitos:</label>
+    <input type="text" id="codeInput" />
+    
+    <label for="formatSelect">Selecciona el formato de descarga:</label>
+    <select id="formatSelect">
+        <option value="png">PNG</option>
+        <option value="svg">SVG</option>
+    </select>
+    <button id="generateButton">Generar y Descargar Código QR</button>
+    <button id="downloadAllButton">Descargar Todos los QR</button>
+
+
+    <div id="qrCodeContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/svg-inline-styles@1.1.0/dist/svg-inline-styles.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
